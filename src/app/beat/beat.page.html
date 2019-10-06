@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+  <ion-title>Tambah Produk</ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content padding center text-center>
+<img src="assets/logo.jpg">
+
+  <ion-title>
+      <ion-text color="soft-pink">
+  </ion-text>
+    </ion-title>
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="Nama Barang"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Harga Satuan" type="int"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Jumlah Stok" type="int"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Kategori</ion-label>
+          <ion-select>
+            <ion-select-option>2014</ion-select-option>
+            <ion-select-option>2016</ion-select-option>
+            <ion-select-option>2017</ion-select-option>
+            <ion-select-option>2018</ion-select-option>
+            <ion-select-option>2019</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Kondisi</ion-label>
+            <ion-select>
+              <ion-select-option value="baru">Baru</ion-select-option>
+              <ion-select-option value="bekas">Bekas</ion-select-option>
+            </ion-select>
+          </ion-item>
+      <ion-item>
+        <ion-label>Tanggal Masuk</ion-label>
+        <ion-datetime value="1990-02-19" placeholder="Select Date"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>Pengiriman</ion-label>
+        <ion-select>
+          <ion-select-option>JNE</ion-select-option>
+          <ion-select-option>JNT</ion-select-option>
+          <ion-select-option>POS INDONESIA</ion-select-option>
+          <ion-select-option>COD</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-item href="http://localhost:8100/keranjang">
+      <ion-button (click)="toggleInfiniteScroll()" expand="block">
+        Tambah
+      </ion-button>
+    </ion-item>
+  </ion-content>

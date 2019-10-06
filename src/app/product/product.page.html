@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+  <ion-title>Daftar Produk</ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content padding center text-center>
+
+  <img src="assets/logo.jpg">
+  <ion-card-header>
+    <ion-card-title>Daftar Produk</ion-card-title>
+  </ion-card-header>
+
+<ion-item href="http://localhost:8100/honda">
+  <ion-button (click)="toggleInfiniteScroll()" expand="block">
+    HONDA
+  </ion-button>
+</ion-item>
+
+<ion-item href="http://localhost:8100/kawasaki">
+  <ion-button (click)="toggleInfiniteScroll()" expand="block">
+    KAWASAKI
+  </ion-button>
+</ion-item>
+
+<ion-item href="http://localhost:8100/suzuki">
+  <ion-button (click)="toggleInfiniteScroll()" expand="block">
+    SUZUKI
+  </ion-button>
+</ion-item>
+
+<ion-item href="http://localhost:8100/yamaha">
+  <ion-button (click)="toggleInfiniteScroll()" expand="block">
+    YAMAHA
+  </ion-button>
+</ion-item>
+</ion-content>
